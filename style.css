@@ -1,0 +1,79 @@
+body {
+    font-family: 'SF Pro Display', 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 340px;
+}
+
+.display {
+    width: 90%;
+    height: 70px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #f7f7f7;
+    color: #333;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20px;
+    background: #f1f3f6;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    background: #e3e6eb;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.clear {
+    background: #ffccd5;
+    color: #d9534f;
+}
+
+button.clear:hover {
+    background: #ffb3ba;
+}
+
+button.equal {
+    background: #c8f7c5;
+    color: #28a745;
+    grid-column: span 2;
+}
+
+button.equal:hover {
+    background: #b2f2b4;
+}
